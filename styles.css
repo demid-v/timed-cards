@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#img-1 {
+  background-image: url(images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg);
+}
+#img-2 {
+  background-image: url(images/pixasquare-4ojhpgKpS68-unsplash.jpg);
+}
+#img-3 {
+  background-image: url(images/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.jpg);
+}
+#img-4 {
+  background-image: url(images/sieuwert-otterloo-aren8nutd1Q-unsplash.jpg);
+}
+#img-5 {
+  background-image: url(images/vu-anh-TiVPTYCG_3E-unsplash.jpg);
+}
+#img-6 {
+  background-image: url(images/webaliser-_TPTXZd9mOo-unsplash.jpg);
+}
+
+.container {
+  position: absolute;
+  bottom: 150px;
+  height: 370px;
+  --container-width: 250px;
+  width: var(--container-width);
+  --gap: 40px;
+  overflow: hidden;
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.486);
+  transition: left 0.8s;
+  background: 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.c-0 {
+  transition: 0.8s;
+  left: -50%;
+  bottom: -50%;
+  width: calc(100vw + 100%);
+  height: calc(100vh + 100%);
+  filter: brightness(0.1);
+}
+
+.c-1 {
+  transition: 0.8s;
+  left: -5%;
+  bottom: -5%;
+  width: calc(100vw + 10%);
+  height: calc(100vh + 10%);
+  transform: translateX(0px);
+  filter: brightness(0.7);
+}
+
+.c-2 {
+  left: calc(50% - var(--container-width) / 2);
+}
+.c-3 {
+  left: calc(50% + var(--container-width) / 2 + var(--gap));
+}
+.c-4 {
+  left: calc(50% + var(--container-width) * 3 / 2 + var(--gap) * 2);
+}
+.c-5 {
+  left: calc(50% + var(--container-width) * 5 / 2 + var(--gap) * 3);
+}
+.c-6 {
+  left: calc(50% + var(--container-width) * 7 / 2 + var(--gap) * 4);
+}
